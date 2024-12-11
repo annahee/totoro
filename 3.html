@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spring / fall</title>
+    
+    <link href="img/m-08.png" rel="shortcut icon" type="image/x-icon">
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        body{
+            background-color: #ff693b;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            color: #000000;
+        }
+        li{
+            list-style-type: none;
+        }
+        .clear{
+            clear: both;
+        }
+        header{
+            width: 1140px;
+            height: 100px;
+            margin: 0 auto;
+            border: solid 1px red;
+        }
+        #logo{
+            float: left;
+            margin: 20px 0 10px 20px;
+        }
+        #top{
+            float: right;
+            margin: 40px 20px 0 0;
+            color: #000000;
+        }
+        #menu{
+            clear: both;
+            height: 40px;
+            background-color: #000000;
+            color: #ffffff;
+            text-align: center;
+            padding-top: 15px;
+            font-size: 20px;
+        }
+        #menu li{
+            display: inline;
+        }
+        #main_menu li{
+            display: inline;
+            margin-left: 80px;
+        }
+        #main_img{
+            width: 100%;
+            height: 400px;
+            background-image: url(img/s.png);
+            background-repeat: no-repeat;
+            background-position: top center;
+            margin-top: 20px;
+        }
+        #main_contents{
+            height: 500px;
+            margin-top: 25px;
+            text-align: center;
+            border: solid 1px #ff693b;
+        }
+        footer{
+            width: 100%;
+            height: 150px;
+            margin-top: 30px;
+            text-align: center;
+            background-color: #000000;
+            color: #ffffff;
+        }
+        #footer_box{
+            height: 150px;
+            margin: 0 auto;
+            display:flex; 
+            justify-content:center; 
+            align-items:center; 
+            line-height:1.8;
+        }
+        a{
+            text-decoration:none;
+        }
+        p{
+            color: #000000;
+        }
+        #gma{
+            margin-top: 30px;
+            padding: 10px;
+            background-color: #ff693b;
+            color: #000000;
+            justify-content:center; 
+            align-items:center; 
+            line-height:1.8;
+        }
+        .m{
+            color: #2d2d2d;
+            font-size: 12px;
+        }
+        .video-container{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            margin-top: 20px;
+        }
+        .list_item{
+            clear: both;
+            height: 30px;
+            margin: 10px;
+        }
+        .gma1{
+            font-size: 15px;
+            color: #000000;
+            text-align: center;
+        }
+        .video{
+            float: left;
+            width: 320px;
+            height: 180px;
+        }
+    </style>
+</head>
+<body>
+    <div id="head">
+        <div id="logo">
+            <a href="0.html"><img src="img/b-06.png" width="100px"></a>
+        </div>
+        <div id="top">
+            로그인 | 회원가입 | 마이페이지
+        </div>
+    </div>
+    <br><br>
+    <ul id="menu">
+        <li class="item"><a href="1.html"><img src="img/m-01.png" width="100px"></a></li>
+        <li class="item"><a href="2.html"><img src="img/m-02.png" width="100px"></a></li>
+        <li class="item"><a href="3.html"><img src="img/m-03.png" width="130px"></a></li>
+        <li class="item"><a href="4.html"><img src="img/m-04.png" width="100px"></a></li>
+        <li class="item"><a href="5.html"><img src="img/m-05.png" width="100px"></a></li>
+    </ul>
+
+    <section id="main_img">
+        
+    </section>
+
+    <div id="main_contents">
+        <img src="img/e-03.png" width="220px">
+        <p>[ 봄 / 가을 ]</p>
+        <br><br><br>
+        <img src="img/tjs-01.png" width="400px">
+        <ul id="gma">
+            <br>
+            <div class="video-container">
+                <div class="list_item">
+                    <div class="video">
+                        <iframe width="320" height="180" src="1.mp4" allowfullscreen></iframe>
+                        <div class="gma1">2024년 11월 1일</div> 
+                        <div class="m">📍 <b>노들섬</b> | Mr. No Blues - 율음</div> 
+                    </div>
+                </div>
+            
+                <div class="list_item">
+                    <div class="video">
+                        <iframe width="320" height="180" src="2.mp4" allowfullscreen></iframe>
+                        <div class="gma1">2023년 10월6일</div> 
+                        <div class="m">📍 <b>한강</b> | Driving Slowly - IKON</div> 
+                    </div>
+                </div>
+            
+                <div class="list_item">
+                    <div class="video">
+                        <iframe width="320" height="180" src="3.mp4" allowfullscreen></iframe>
+                        <div class="gma1">2024년 5월 13일</div> 
+                        <div class="m">📍 <b>노들섬</b> | Always Awake - 빈지노</div> 
+                    </div>
+            </div>
+        </ul>
+    </div>
+
+    <div class="clear"></div> <!-- float 속성 해제 -->
+
+    <footer>
+        <div id="footer_box">
+            <div id="footer_logo">
+                <ul>
+                    <li>계원예술대학교 디지털미디어디자인 안나희</li>
+                    <li>ⓒ 2024 annahee</li>
+                    <li><img src="img/2.png" width="100px"></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
